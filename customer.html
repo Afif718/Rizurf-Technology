@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer System</title>
+    <link rel="stylesheet" type="text/css" href="customer.css">
+</head>
+<body>
+
+
+
+    <div>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="formSubmit()">
+                    <!-- One -->
+                    <div>
+                        <label for="bookCode">Book Code</label>
+                        <input type="text" name="bookCode" id="bookCode">
+                    </div>
+                    <!-- two -->
+                    <div>
+                        <label for="bookName">Book Name</label>
+                        <input type="text" name="bookName" id="bookName">
+                    </div>
+                    <!-- three -->
+                    <div>
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="quantity" id="quantity">
+                    </div>
+                    <!-- four -->
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+
+                    <!-- Submit and reset buttons -->
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                        <!-- Output section -->
+                            <tr>
+                                <th>Book Code</th>
+                                <th>Book Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+     <!-- Clock -->
+    <div class="container">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="session">AM</span>
+    </div>
+
+
+
+<!--    Javascript file
+ -->
+ <script type="text/javascript" src="customer.js"></script>
+</body>
+</html>
